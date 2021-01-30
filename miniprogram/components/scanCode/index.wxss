@@ -1,23 +1,31 @@
 /* components/scanCode/index.wxss */
-.camera-view{
-  position: relative;
+.camera-view {
   width: 480rpx;
   height: 480rpx;
   margin: 30rpx;
+  position: relative;
 }
+
+.scan-camera-group {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 .scan-camera {
   width: 480rpx;
   height: 480rpx;
   border-radius: 6rpx;
   position: relative;
 }
- 
+
 .cover-corner {
   width: 80rpx;
   height: 80rpx;
   position: absolute;
 }
- 
+
 .cover-left-top {
   left: -5rpx;
   top: -5rpx;
@@ -26,7 +34,7 @@
   border-left: 10rpx solid #08FDFE;
   border-top: 10rpx solid #08FDFE;
 }
- 
+
 .cover-right-top {
   right: -5rpx;
   top: -5rpx;
@@ -35,7 +43,7 @@
   border-right: 10rpx solid #08FDFE;
   border-top: 10rpx solid #08FDFE;
 }
- 
+
 .cover-left-bottom {
   left: -5rpx;
   bottom: -5rpx;
@@ -44,7 +52,7 @@
   border-left: 10rpx solid #08FDFE;
   border-bottom: 10rpx solid #08FDFE;
 }
- 
+
 .cover-right-bottom {
   right: -5rpx;
   bottom: -5rpx;
@@ -53,7 +61,7 @@
   border-right: 10rpx solid #08FDFE;
   border-bottom: 10rpx solid #08FDFE;
 }
- 
+
 .scan-animation {
   position: absolute;
   top: -10rpx;
