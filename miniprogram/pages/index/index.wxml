@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 操作数据库 -->
+  <view class="uploader">
+    <view class="uploader-text" bindtap="saoma">
+      <text>微信扫码</text>
+    </view>
+  </view>
+  <!-- 操作数据库 -->
+  <view class="uploader">
+    <navigator url="../saoma/index" open-type="navigate" class="uploader-text">
+      <text>自定义扫码</text>
+    </navigator>
+  </view>
+</view>

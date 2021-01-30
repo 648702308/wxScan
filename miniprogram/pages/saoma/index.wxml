@@ -1,0 +1,7 @@
+<!--miniprogram/pages/saoma/index.wxml-->
+<view class="scan-view">
+  <view class="scan-border">
+    <scan-code id="scanCode"></scan-code>
+    <!-- 这里可以处理其他内容 -->
+  </view>
+</view>

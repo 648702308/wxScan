@@ -1,0 +1,11 @@
+<!--components/scanCode/index.wxml-->
+<view class="camera-view">
+  <camera id="scanCamera" class="scan-camera" mode="scanCode" bindinitdone="initdone" binderror="cameraError"
+    bindscancode="scancode" frame-size="large">
+    <view id="animationLine" class="scan-animation" animation="{{animation}}"></view>
+  </camera>
+  <view class="cover-corner cover-left-top"></view>
+  <view class="cover-corner cover-right-top"></view>
+  <view class="cover-corner cover-left-bottom"></view>
+  <view class="cover-corner cover-right-bottom"></view>
+</view>
