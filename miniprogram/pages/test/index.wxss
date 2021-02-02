@@ -1,0 +1,13 @@
+/* miniprogram/pages/test/index.wxss */
+page{
+  background: #eee
+ }
+ .common{
+   height: 100rpx;
+   opacity: 0;
+   margin-left: -50rpx;
+   background: #fff;
+   margin-top: 20rpx;
+   line-height: 100rpx;
+   padding: 25rpx;
+ }

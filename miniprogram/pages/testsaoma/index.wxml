@@ -1,18 +1,17 @@
-<!--miniprogram/pages/saoma/index.wxml-->
 <view class="scan-view">
   <view class="scan-out-box">
     <scan-code id="scanCode" bind:scancode="scancode"></scan-code>
     <!-- 这里可以处理其他内容 -->
   </view>
   <view class="scan-content">
-    <scroll-view class="scroll-view" id="scrollView" scroll-y scroll-into-view="{{scrollInfoId}}" scroll-with-animation>
-      <view class="list-item-group old-list-item">
-        <block wx:for="{{lists}}" wx:key="index">
+    <swiper class="swiper-container" current="{{current}}" autoplay="{{false}}" vertical="{{true}}" circular="{{true}}" interval="{{2000}}">
+      <block wx:for="{{lists}}" wx:key="index">
+        <swiper-item catchtouchmove="stopTouchMove">
           <view class="list-item item" id="id-{{item.id}}">
             {{item.value}}
           </view>
-        </block>
-      </view>
-    </scroll-view>
+        </swiper-item>
+      </block>
+    </swiper>
   </view>
 </view>
