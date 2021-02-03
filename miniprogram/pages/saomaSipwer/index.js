@@ -1,7 +1,6 @@
 Page({
   data: {
-    
-    lists: [{ value: '1222222222225444', id: 1, top: 0 },],
+    lists: [],
     scrollInfoId: '',
     current: 0
   },

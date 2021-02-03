@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "自定义扫码",
   "usingComponents": {
     "scan-code": "../../components/scanCode/index"
   }

@@ -1,0 +1,50 @@
+<view class="notice-view">
+  <!-- 图标 -->
+  <view class="notice-header">
+    <text class="iconfont icon-notice"></text>
+  </view>
+  <!-- swiper -->
+  <swiper class="swiper-container" current="{{current}}" autoplay="{{true}}" vertical="{{true}}" circular="{{true}}"
+    interval="{{2000}}">
+    <block wx:for="{{lists}}" wx:key="index">
+      <swiper-item catchtouchmove="stopTouchMove">
+        <view class="list-item item" id="id-{{item.id}}">
+          {{item.text}}
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- footer -->
+  <view class="notice-footer">
+    <text></text>
+    <text class="iconfont icon-gengduo"></text>
+  </view>
+</view>
+
+<view class="notice-view">
+  <!-- 图标 -->
+  <view class="notice-header">
+    <text class="iconfont icon-notice"></text>
+  </view>
+  <!-- swiper -->
+  <view class="notice-content-view">
+    <view class="left-box">
+      <view class="left-text"></view>
+      <view class="content-box">
+        <view class="content-text" animation="{{animationData}}">
+          <text id="text">
+            <block wx:for="{{lists2}}" wx:key="index">
+              <text>{{item.text}}</text>
+            </block>
+          </text>
+        </view>
+      </view>
+      <view class="right-text"></view>
+    </view>
+  </view>
+  <!-- footer -->
+  <view class="notice-footer">
+    <text></text>
+    <text class="iconfont icon-gengduo"></text>
+  </view>
+</view>

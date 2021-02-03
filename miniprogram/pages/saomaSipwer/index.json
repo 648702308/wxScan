@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "saomaSipwer",
   "usingComponents": {
     "scan-code": "../../components/scanCode/index"
   }
